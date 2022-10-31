@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+.topbar a:hover, .topbar a:active{
+    color: #FFF;
+    
+}
 .topbar-nav{
     text-align: center;
     margin-bottom: 16px
@@ -28,7 +32,8 @@ a{
 .topbar-nav a{
     margin: 0 12px;
     display: inline-block;
-    color: rgba(255, 255, 255, 0.67);
+    color: rgba(255, 255, 255, 0.57);
+    transition: color .5s;
 }
 
 .topbar-logo{
@@ -39,3 +44,20 @@ a{
     
 }
 
+@media only screen and (min-width: 100px){
+    .topbar{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+        padding: 0 25px;
+    }
+
+    .topbar-logo, .topbar-nav{
+        margin: 0;
+        
+    }
+    .topbar-nav a{
+        margin: 0 20px;
+    }
+}
